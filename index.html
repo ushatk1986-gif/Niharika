@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day Celebration</title>
+    <title>Niharika - Enhanced Animation Styles</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f2f2f2; color: #333; }
-        h1 { color: #e74c3c; }
-        .heart { color: red; font-size: 50px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            border-radius: 10px;
+            position: absolute;
+            animation: move 5s infinite alternate;
+            transition: transform 0.5s;
+        }
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(300px, 300px); }
+        }
+        .animated-box:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
-    <h1>Valentine's Day Celebration</h1>
-    <p>Welcome to our Valentine's Day celebration! Join us to express your love and affection.</p>
-    <p>❤️</p>
-    <ul>
-        <li>Love letters</li>
-        <li>Romantic dinners</li>
-        <li>Gift exchanges</li>
-        <li>Fun party games</li>
-    </ul>
-    <p>Let’s make this day special!</p>
+    <div class="animated-box"></div>
 </body>
 </html>
